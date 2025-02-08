@@ -42,7 +42,7 @@ const Index = () => {
       <div className="container mx-auto px-4 space-y-3 mb-6 mt-6">
         <motion.a
           href="https://m.sports.naver.com/general/video?category=harbin2025&sort=date&tab=latest"
-          className="block w-full p-4 bg-[#FEC6A1] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all"
+          className="block w-full p-4 bg-[#FEC6A1] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all hover:shadow-xl"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -51,7 +51,7 @@ const Index = () => {
         </motion.a>
         <motion.a
           href="https://namu.wiki/w/2025%20%ED%95%98%EC%96%BC%EB%B9%88%20%EB%8F%99%EA%B3%84%20%EC%95%84%EC%8B%9C%EC%95%88%20%EA%B2%8C%EC%9E%84#s-8"
-          className="block w-full p-4 bg-[#F2FCE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#E5DEFF] transition-all"
+          className="block w-full p-4 bg-[#F2FCE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#E5DEFF] transition-all hover:shadow-xl"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -60,7 +60,7 @@ const Index = () => {
         </motion.a>
         <motion.a
           href="https://coffeemania68.github.io/onairlink/"
-          className="block w-full p-4 bg-[#FFDEE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all"
+          className="block w-full p-4 bg-[#FFDEE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all hover:shadow-xl"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -78,7 +78,7 @@ const Index = () => {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <h3 className="text-2xl font-bold mb-2">하이라이트</h3>
-          <p className="text-center opacity-90">주요 경기 하이라이트 영상</p>
+          <p className="text-center opacity-90">주요 경기<br />하이라이트 영상</p>
         </motion.a>
         <motion.a
           href="https://namu.wiki/w/2025%20%ED%95%98%EC%96%BC%EB%B9%88%20%EB%8F%99%EA%B3%84%20%EC%95%84%EC%8B%9C%EC%95%88%20%EA%B2%8C%EC%9E%84#s-8"
