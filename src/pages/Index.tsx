@@ -19,27 +19,35 @@ const Index = () => {
         </p>
       </div>
 
-      {/* Hero Section */}
-      <div className="relative w-full h-[60vh] overflow-hidden mb-8">
-        <img
-          src="/lovable-uploads/ef5d6b57-ffd7-4b36-8dba-ac4292265413.png"
-          alt="2025 하얼빈 동계 아시안게임"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30">
-          <div className="container mx-auto px-4 h-full flex items-center justify-center">
-            <h1 className="text-4xl md:text-6xl text-white font-bold text-center animate-fade-in">
-              제9회 하얼빈 동계 아시안게임
-            </h1>
-          </div>
+      {/* Header Title Split */}
+      <div className="container mx-auto px-4 py-8 flex justify-center items-center gap-4 text-3xl md:text-4xl font-bold text-gray-800">
+        <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
+          제9회 하얼빈
         </div>
+        <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
+          동계아시안게임
+        </div>
+      </div>
+
+      {/* Header Images */}
+      <div className="container mx-auto px-4 mb-8 flex gap-4 justify-center">
+        <img
+          src="https://weboss.harbin2025.com/media/20241216/01534384680c21c1f18f13193b9f098443.png"
+          alt="하얼빈 동계 아시안게임 1"
+          className="w-1/2 h-40 object-cover rounded-lg shadow-lg"
+        />
+        <img
+          src="https://weboss.harbin2025.com/media/20241216/01d1e0e3fe7acbac2bda713c1218bd3497.png"
+          alt="하얼빈 동계 아시안게임 2"
+          className="w-1/2 h-40 object-cover rounded-lg shadow-lg"
+        />
       </div>
 
       {/* Main Action Buttons */}
       <div className="container mx-auto px-4 space-y-4 mb-8">
         <motion.a
-          href="#"
-          className="block w-full p-4 bg-red-600 text-white text-center rounded-xl shadow-lg font-bold text-lg hover:bg-red-700 transition-all"
+          href="https://m.sports.naver.com/general/video?category=harbin2025&sort=date&tab=latest"
+          className="block w-full p-4 bg-[#FDE1D3] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FEC6A1] transition-all"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -47,8 +55,8 @@ const Index = () => {
           실시간 중계 보기
         </motion.a>
         <motion.a
-          href="#"
-          className="block w-full p-4 bg-amber-400 text-white text-center rounded-xl shadow-lg font-bold text-lg hover:bg-amber-500 transition-all"
+          href="https://namu.wiki/w/2025%20%ED%95%98%EC%96%BC%EB%B9%88%20%EB%8F%99%EA%B3%84%20%EC%95%84%EC%8B%9C%EC%95%88%20%EA%B2%8C%EC%9E%84#s-8"
+          className="block w-full p-4 bg-[#E5DEFF] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#D3E4FD] transition-all"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -57,7 +65,7 @@ const Index = () => {
         </motion.a>
         <motion.a
           href="#"
-          className="block w-full p-4 bg-blue-600 text-white text-center rounded-xl shadow-lg font-bold text-lg hover:bg-blue-700 transition-all"
+          className="block w-full p-4 bg-[#FFDEE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FEC6A1] transition-all"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -66,24 +74,26 @@ const Index = () => {
         </motion.a>
       </div>
 
-      {/* Highlight Sections */}
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-        <motion.div
-          className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-purple-500 to-pink-500 p-6 text-white flex flex-col items-center justify-center cursor-pointer"
+      {/* Highlight Sections - Always 1x2 Layout */}
+      <div className="container mx-auto px-4 flex gap-4 mb-8">
+        <motion.a
+          href="https://m.sports.naver.com/general/video?category=harbin2025&sort=date&tab=latest"
+          className="w-1/2 aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-[#F2FCE2] to-[#E5DEFF] p-6 text-gray-700 flex flex-col items-center justify-center cursor-pointer shadow-lg"
           whileHover={{ scale: 1.02 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
           <h3 className="text-2xl font-bold mb-2">하이라이트</h3>
           <p className="text-center opacity-90">주요 경기 하이라이트 영상</p>
-        </motion.div>
-        <motion.div
-          className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-500 p-6 text-white flex flex-col items-center justify-center cursor-pointer"
+        </motion.a>
+        <motion.a
+          href="https://namu.wiki/w/2025%20%ED%95%98%EC%96%BC%EB%B9%88%20%EB%8F%99%EA%B3%84%20%EC%95%84%EC%8B%9C%EC%95%88%20%EA%B2%8C%EC%9E%84#s-8"
+          className="w-1/2 aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-[#FEF7CD] to-[#FDE1D3] p-6 text-gray-700 flex flex-col items-center justify-center cursor-pointer shadow-lg"
           whileHover={{ scale: 1.02 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
           <h3 className="text-2xl font-bold mb-2">실시간 한국 순위</h3>
           <p className="text-center opacity-90">메달 획득 현황</p>
-        </motion.div>
+        </motion.a>
       </div>
 
       {/* Galaxy Promotion Banner */}
