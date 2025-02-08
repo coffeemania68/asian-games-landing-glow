@@ -19,35 +19,32 @@ const Index = () => {
         </p>
       </div>
 
-      {/* Header Title Split */}
-      <div className="container mx-auto px-4 py-8 flex justify-center items-center gap-4 text-3xl md:text-4xl font-bold text-gray-800">
-        <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-          제9회 하얼빈
+      {/* Header Container */}
+      <div className="container mx-auto px-4 py-8 relative">
+        <div className="flex gap-4 h-[200px] relative rounded-xl overflow-hidden">
+          <img
+            src="https://weboss.harbin2025.com/media/20241216/01534384680c21c1f18f13193b9f098443.png"
+            alt="하얼빈 동계 아시안게임 1"
+            className="w-1/2 object-cover"
+          />
+          <img
+            src="https://weboss.harbin2025.com/media/20241216/01d1e0e3fe7acbac2bda713c1218bd3497.png"
+            alt="하얼빈 동계 아시안게임 2"
+            className="w-1/2 object-cover"
+          />
+          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-white text-center leading-relaxed">
+              제9회 하얼빈<br />동계아시안게임
+            </h1>
+          </div>
         </div>
-        <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-          동계아시안게임
-        </div>
-      </div>
-
-      {/* Header Images */}
-      <div className="container mx-auto px-4 mb-8 flex gap-4 justify-center">
-        <img
-          src="https://weboss.harbin2025.com/media/20241216/01534384680c21c1f18f13193b9f098443.png"
-          alt="하얼빈 동계 아시안게임 1"
-          className="w-1/2 h-40 object-cover rounded-lg shadow-lg"
-        />
-        <img
-          src="https://weboss.harbin2025.com/media/20241216/01d1e0e3fe7acbac2bda713c1218bd3497.png"
-          alt="하얼빈 동계 아시안게임 2"
-          className="w-1/2 h-40 object-cover rounded-lg shadow-lg"
-        />
       </div>
 
       {/* Main Action Buttons */}
       <div className="container mx-auto px-4 space-y-4 mb-8">
         <motion.a
           href="https://m.sports.naver.com/general/video?category=harbin2025&sort=date&tab=latest"
-          className="block w-full p-4 bg-[#FDE1D3] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FEC6A1] transition-all"
+          className="block w-full p-4 bg-[#FEC6A1] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -56,7 +53,7 @@ const Index = () => {
         </motion.a>
         <motion.a
           href="https://namu.wiki/w/2025%20%ED%95%98%EC%96%BC%EB%B9%88%20%EB%8F%99%EA%B3%84%20%EC%95%84%EC%8B%9C%EC%95%88%20%EA%B2%8C%EC%9E%84#s-8"
-          className="block w-full p-4 bg-[#E5DEFF] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#D3E4FD] transition-all"
+          className="block w-full p-4 bg-[#F2FCE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#E5DEFF] transition-all"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -64,13 +61,13 @@ const Index = () => {
           2025 경기 일정 보기
         </motion.a>
         <motion.a
-          href="#"
-          className="block w-full p-4 bg-[#FFDEE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FEC6A1] transition-all"
+          href="https://coffeemania68.github.io/onairlink/"
+          className="block w-full p-4 bg-[#FFDEE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
         >
-          경기 종목 보기
+          진행 경기 보러가기
         </motion.a>
       </div>
 
