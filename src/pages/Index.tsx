@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -12,15 +11,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
-      {/* Coupang Partners Notice */}
-      <div className="w-[95%] mx-auto bg-gradient-to-r from-white to-gray-50 border border-gray-100 rounded-lg p-4 shadow-sm mt-4">
-        <p className="text-gray-600 text-sm leading-relaxed text-center">
-          이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
-        </p>
-      </div>
-
-      {/* Header Container */}
-      <div className="container mx-auto px-4 py-8 relative">
+      {/* Header Container with Coupang Notice */}
+      <div className="container mx-auto relative">
         <div className="flex gap-4 h-[200px] relative rounded-xl overflow-hidden">
           <img
             src="https://weboss.harbin2025.com/media/20241216/01534384680c21c1f18f13193b9f098443.png"
@@ -32,8 +24,13 @@ const Index = () => {
             alt="하얼빈 동계 아시안게임 2"
             className="w-1/2 object-cover"
           />
-          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-white text-center leading-relaxed">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30 flex flex-col items-center justify-between py-4">
+            <div className="bg-white/80 backdrop-blur px-6 py-2 rounded-lg mx-4">
+              <p className="text-gray-700 text-sm leading-relaxed text-center">
+                이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+              </p>
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold text-white text-center leading-relaxed mb-8">
               제9회 하얼빈<br />동계아시안게임
             </h1>
           </div>
@@ -41,7 +38,7 @@ const Index = () => {
       </div>
 
       {/* Main Action Buttons */}
-      <div className="container mx-auto px-4 space-y-4 mb-8">
+      <div className="container mx-auto px-4 space-y-4 mb-8 mt-8">
         <motion.a
           href="https://m.sports.naver.com/general/video?category=harbin2025&sort=date&tab=latest"
           className="block w-full p-4 bg-[#FEC6A1] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all"
@@ -94,7 +91,7 @@ const Index = () => {
       </div>
 
       {/* Galaxy Promotion Banner */}
-      <div className="w-[95%] mx-auto mt-4">
+      <div className="w-[95%] mx-auto">
         <a href="https://link.coupang.com/a/cdKvMW" className="block">
           <div className="bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 text-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02]">
             <div className="p-3 flex flex-col md:flex-row items-center justify-between">
