@@ -59,7 +59,7 @@ const Index = () => {
           2025 경기 일정 보기
         </motion.a>
         <motion.a
-          href="https://coffeemania68.github.io/onairlink/"
+          href="https://coffeemania68.github.io/asian-games-landing-glow/"
           className="block w-full p-4 bg-[#FFDEE2] text-gray-700 text-center rounded-xl shadow-lg font-bold text-lg hover:bg-[#FDE1D3] transition-all hover:shadow-xl"
           variants={buttonVariants}
           initial="initial"
